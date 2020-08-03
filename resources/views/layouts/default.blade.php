@@ -2,22 +2,17 @@
 <html>
   <head>
     <title>@yield('title', 'TEST') - Laravel </title>
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="{{mix('css/app.css')}}">
   </head>
+  
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="/">TEST</a>
-        <ul class="navbar-nav justify-content-end">
-          <li class="nav-item"><a class="nav-link" href="/help">HELP</a></li>
-          <li class="nav-item" ><a class="nav-link" href="#">SIGN IN</a></li>
-        </ul>
-      </div>
-    </nav>
+      @include('layouts.header')
 
     <div class="container">
+        <div class="offset-md-1 col-md-10">
       @yield('content')
+      @include('layouts._footer')
     </div>
+
   </body>
 </html>
