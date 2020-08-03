@@ -1,6 +1,10 @@
 <?php
 
+namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Route;
+
+class StaticPagesController extends Controller
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+{
+    public function home()
+    {
+        return 'HOME';
+    }
+
+    public function help()
+    {
+        return 'HELP';
+    }
+
+
+    public function about()
+    {
+        return 'ABOUT';
+    }
+
+
+
+}
