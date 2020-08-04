@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TEST</title>
+  <title>Laravel</title>
 </head>
 <body>
   <h1>HOME</h1>
