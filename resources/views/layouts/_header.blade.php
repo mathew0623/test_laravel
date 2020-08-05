@@ -10,13 +10,13 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ route('users.show', Auth::user()) }}">Personal</a>
-            <a class="dropdown-item" href="#">Edit</a>
+            <a class="dropdown-item" href="{{ route('users.show', Auth::user()) }}">Edit</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" id="logout" href="#">
               <form action="{{ route('logout') }}" method="POST">
                 {{ csrf_field() }}
                 {{ method_field('DELETE') }}
-                <button class="btn btn-block btn-danger" type="submit" name="button">Exit</button>
+                <button class="btn btn-block btn-danger" type="submit" name="button">Logout</button>
               </form>
             </a>
           </div>
